@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Task\CreateModal;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', function () {
     return view('pages.home');
 })->name("home");
+
+Route::post("/saveImage", [\App\Http\Controllers\TaskController::class, "saveImage"]);
+
+
 
 Route::get('/settings', function () {
     return view('pages.settings');

@@ -8,5 +8,8 @@ module.exports = {
     theme: {
         extend: {},
     },
+    blocklist: [
+      "collapse"
+    ],
     plugins: [],
 }

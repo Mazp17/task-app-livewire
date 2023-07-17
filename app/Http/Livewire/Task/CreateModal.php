@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class CreateModal extends Component
 {
-    public bool $isOpen = true;
+    public bool $isOpen = false;
     protected $listeners = [
         "createModal" =>"open",
         "closeModal" => "close"
@@ -20,7 +20,8 @@ class CreateModal extends Component
      */
     public function render(): View
     {
-        return view('livewire.Task.create-modal');
+        return view('livewire.Task.create-modal')
+            ->layout("layouts.default");
     }
 
     public function open(): void
@@ -32,6 +33,4 @@ class CreateModal extends Component
     {
         $this->isOpen = false;
     }
-
-
 }

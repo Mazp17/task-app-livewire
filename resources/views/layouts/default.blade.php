@@ -8,6 +8,7 @@
     <title>Task App </title>
     @vite("resources/js/app.js")
     @livewireStyles
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/dropzone/dist/dropzone.css" rel="stylesheet" />
 </head>
 <body>
     <div class="page">
@@ -28,5 +29,6 @@
         </article>
     </div>
     @livewireScripts
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/dropzone/dist/dropzone-min.js"></script>
 </body>
 </html>

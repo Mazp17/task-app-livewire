@@ -6,17 +6,7 @@
 @endsection
 
 @section("header")
-    <div class="row g-2 align-items-center">
-        <div class="col">
-            <div class="page-pretitle">
-                Task app
-            </div>
-            <h2 class="page-title">
-                Home page
-            </h2>
-        </div>
-        <livewire:btn.create-modal/>
-    </div>
+    <livewire:header/>
 @endsection
 
 @section("content")
